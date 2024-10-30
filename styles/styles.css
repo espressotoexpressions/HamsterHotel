@@ -1,0 +1,173 @@
+:root{
+    --blue1: #000324;
+    --blue2: #E5FEFF;
+    --blue3: #1A1B26;
+    --blue4: #004CC7;
+    --blue5: #1F51A8;
+    --blue7: #006EDB;
+    --blue8: #000DC7;
+    --lightpurple: ##EBEDFC;
+    --darkerlightpurple: #7A90D9;
+    --white: #FFFFFF;
+}
+
+*{
+    font: Dosis;
+    color: var(--blue3);
+}
+
+p{
+    font-size: 15px;
+    font-weight:lighter;
+    text-align: left;
+    font: Source Sans Pro;
+letter-spacing: 0px;
+color: #1A1B26;
+}
+
+.header-bg{
+    
+    /* background: #000324 0% 0% no-repeat padding-box; */
+
+    background: var(--blue1);
+    opacity: 1;
+  
+
+}
+.header-nav{
+   font:Dosis;
+    letter-spacing: 0px;
+    font-weight: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+.header-nav a{
+    color: white;
+    font: Dosis;
+   
+}
+.active-nav{
+    border: 2px solid var(--blue2);
+opacity: 1;
+}
+.header-img{
+position: absolute;
+/*need to position the starting point under the header nav*/
+top:-182px; 
+    left: 0px;
+    width: 100%;
+opacity: 1;
+height: auto;
+  clip-path: outset(1000px);
+}
+
+
+
+.headerimg-crop {
+    width: 100%; 
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+  }
+  
+  .headerimg-crop img {
+    position: absolute;
+    top: -382px;   
+    left:0px; 
+    width: 100%;
+    height: auto;
+  }
+
+  .header-container{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+width: 50%;
+height: 40%;
+    background-color: var(--blue1);
+    opacity: 0.8;
+  
+  }
+  
+
+  .header-container h1{
+    color:var(--blue2);
+    font-size: 45px;
+    line-height: 57px;
+    font-weight:lighter;
+  }
+
+  .header-container p{
+    font-size: 11px;
+    color: var(--blue2);
+  }
+  .hamsterhome-crop {
+    width: 369px;
+    height: 416px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hamsterhome-crop img {
+    position: absolute;
+    top: -70px;    /* Adjust to bring desired part of the image into view */
+    left: -20px;  /* Adjust to bring desired part of the image into view*/
+    width: 369px; 
+    height: auto;
+  }
+  
+  h5{
+    text-align: left;
+   font-size: 35px;
+   line-height: 44px;
+letter-spacing: 0px;
+opacity: 1;
+font-weight:lighter;
+
+  }
+
+  .awards{
+
+   align-items: end;
+    width: 100%;
+    
+ }
+ .awards img{
+    margin-right: 1rem;
+    
+ }
+
+  .blue-container{
+    background-color: var(--blue1);
+    opacity: 1;
+    background: transparent url('../hotelMarkupAssets/bg2.jpg') ;
+    padding:100px;
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .room-container{
+    width: 80%;
+
+
+  }
+
+  .reserve-button{
+
+      padding-top: 0.5rem;
+                      padding-left: 0.55rem;
+                      font-size: 15px;
+                      width: 40%;
+                      
+                    
+  }
+
+  .room-header
+  {
+    font-size: 20px;
+  }
