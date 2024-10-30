@@ -47,7 +47,7 @@
     </div>
 
     <!-- start header image pool-->
-    <!-- <div class="container"> -->
+
     <div class="row headerimg-crop">
       <div class="col">
         <img
@@ -56,21 +56,22 @@
           alt="header image of pool"
         />
       </div>
-    <!-- </div> -->
-    <!-- end header image pool-->
 
-    <div class="row header-container">
-      <!--need to fix issue with column alignment-->
-      <div class="col justify-content-center">
-        <h1>Run on the wheel of luxury</h1>
-        <p>Exolore everting the beach has to offer in our relaxing resort</p>
+      <!-- end header image pool-->
+
+      <div
+        class="row d-flex align-content-center justify-content-center header-container"
+      >
+        <!--need to fix issue with column alignment-->
+        <div class="col">
+          <h1>Run on the wheel of luxury</h1>
+          <p>Exolore everting the beach has to offer in our relaxing resort</p>
+        </div>
       </div>
     </div>
-  </div>
     <!-- end header navigation-->
 
     <!-- start welcome to hamsters paradise-->
-
     <div class="container" style="width: 70%">
       <div class="row mt-5 mb-5">
         <div class="col-8 hamsterhome-crop">
@@ -120,10 +121,13 @@
     <!-- end hamsters paradise-->
     <!-- start Our Rooms-->
     <div class="container-fluid blue-container d-flex justify-content-center">
-      <div class="row room-container " >
-        <div class="col ">
-          <h5 style="color: white">Our Rooms</h5>
+      <div class="row room-container">
+        <div class="col">
+          <h5 class="d-flex justify-content-center" style="color: white">
+            Our Rooms
+          </h5>
           <div class="row row-cols-1 row-cols-md-3 g-5">
+            <!-- start Queen Room-->
             <div class="col">
               <div class="card border-0 rounded-0 h-100">
                 <img
@@ -133,11 +137,15 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title room-header">Queen Room</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                  <h6>850 SQ FT room with city view</h6>
+                  <ul>
+                    <li>One queen size bed</li>
+                    <li>Seed Bar, fireplace and large balcony</li>
+                    <li>
+                      small kitchen with a refrigerator, stove, and island
+                    </li>
+                  </ul>
+
                   <button
                     type="button"
                     class="btn btn-primary reserve-button rounded-0"
@@ -147,6 +155,7 @@
                 </div>
               </div>
             </div>
+            <!--end Queen room-->
             <div class="col">
               <div class="card border-0 rounded-0 h-100">
                 <img
@@ -156,11 +165,14 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title room-header">King Room</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                  <h6>950 SQ FT room with beach view</h6>
+                  <ul>
+                    <li>One king size bed</li>
+                    <li>Seed Bar, fireplace and large balcony</li>
+                    <li>
+                      small kitchen with a refrigerator, stove, and island
+                    </li>
+                  </ul>
                   <button
                     type="button"
                     class="btn btn-primary reserve-button rounded-0"
@@ -179,10 +191,15 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title room-header">Beach Side Suite</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
+
+                  <h6>1500 SQ FT Suite with beach view</h6>
+                  <ul>
+                    <li>One California king size bed</li>
+                    <li>Second room with fireplace, hot tub, and balcony</li>
+                    <li>Seed Bar and coffee station</li>
+                    <li>Full kitchen with a refrigerator, stove, and island</li>
+                  </ul>
+
                   <button
                     type="button"
                     class="btn btn-primary reserve-button rounded-0"
@@ -196,8 +213,99 @@
         </div>
       </div>
     </div>
-
     <!-- end our rooms-->
+    <!-- start welcome to hamsters paradise-->
+    <div class="container mt-5 mb-5 packages" style="width: 70% ">
+      <h5 class="d-flex justify-content-center">Packages</h5>
+      <div class="row d-flex justify-content-center">
+        <!--start of cards with photos and text-->
+
+        <!-- PACKAGE 1-->
+        <div class="card border-0 rounded-0">
+          <div class="row g-0">
+            <div class="col-6">
+              <img
+                src="./hotelMarkupAssets/hamsterwedding.jpg"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <h5 class="card-title">Beach Wedding package</h5>
+                <p class="packages-bluetxt">Starting US $1,500.00</p>
+                <p class="card-text">
+                  Feel the warmth of the beach as the flames in your hearts
+                  ignite during our romantic beach side wedding. All wedding
+                  packages include catering, an open bar, and one tier wedding
+                  cake (9" Vanilla standard cake). A private dinner for your
+                  closets family members and friends will be provided after the
+                  ceremony.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end Package 1-->
+         <!-- PACKAGE 2-->
+         <div class="card mb-3 border-0 rounded-0">
+          <div class="row g-0">
+          
+            <div class="col-6">
+              <div class="card-body">
+                <h5 class="card-title">Beach Wedding package</h5>
+                <p class="packages-bluetxt">Starting US $1,500.00</p>
+                <p class="card-text">
+                  Feel the warmth of the beach as the flames in your hearts
+                  ignite during our romantic beach side wedding. All wedding
+                  packages include catering, an open bar, and one tier wedding
+                  cake (9" Vanilla standard cake). A private dinner for your
+                  closets family members and friends will be provided after the
+                  ceremony.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <img
+                src="./hotelMarkupAssets/hamsterspring.jpg"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end Package 2-->
+
+         <!-- PACKAGE 3-->
+         <div class="card border-0 rounded-0">
+          <div class="row g-0">
+            <div class="col-6">
+              <img
+                src="./hotelMarkupAssets/hamstercheese.jpg"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <h5 class="card-title">Beach Wedding package</h5>
+                <p class="packages-bluetxt">Starting US $1,500.00</p>
+                <p class="card-text">
+                  Feel the warmth of the beach as the flames in your hearts
+                  ignite during our romantic beach side wedding. All wedding
+                  packages include catering, an open bar, and one tier wedding
+                  cake (9" Vanilla standard cake). A private dinner for your
+                  closets family members and friends will be provided after the
+                  ceremony.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end Package 3-->
+      </div>
+    </div>
+    <!-- end hamsters paradise-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

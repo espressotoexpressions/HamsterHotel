@@ -82,6 +82,8 @@ height: auto;
     height: auto;
   }
 
+  /*blue run on the wheel header*/
+
   .header-container{
     position: absolute;
     top: 25%;
@@ -105,6 +107,11 @@ height: 40%;
     font-size: 11px;
     color: var(--blue2);
   }
+
+  /* end blue run on the wheel header*/
+
+
+  /*hamsters paradise section*/
   .hamsterhome-crop {
     width: 369px;
     height: 416px;
@@ -132,15 +139,18 @@ font-weight:lighter;
 
   .awards{
 
-   align-items: end;
     width: 100%;
-    
+    align-items: end;
  }
  .awards img{
-    margin-right: 1rem;
-    
+   width: 150px;   
+   margin-right: 1rem;
  }
 
+
+/*end hamsters paradise  section*/
+ 
+/*Room section*/
   .blue-container{
     background-color: var(--blue1);
     opacity: 1;
@@ -148,21 +158,28 @@ font-weight:lighter;
     padding:100px;
     width: 100%;
     height: auto;
+
   
   }
 
   .room-container{
-    width: 80%;
+    width: 70%;
 
+
+
+  }
+
+  .room-container li{
+    font-weight: lighter;
 
   }
 
   .reserve-button{
 
       padding-top: 0.5rem;
-                      padding-left: 0.55rem;
-                      font-size: 15px;
-                      width: 40%;
+      padding-left: 0.55rem;
+      font-size: 15px;
+       width: 40%;
                       
                     
   }
@@ -171,3 +188,31 @@ font-weight:lighter;
   {
     font-size: 20px;
   }
+/* 
+.card {
+  display: flex;
+  align-items: end;
+} */
+
+  /* end room section*/
+
+  /* Start Packages*/
+
+  .packages img{
+    width: 100%;
+    height: 234px;
+  }
+
+  .packages p{
+  }
+
+  .packages-bluetxt{
+    color: var(--blue5);
+  }
+  /*end packages*/
+
+
+  /*Amenities*/
+
+  /*end of amenities*/
+  
