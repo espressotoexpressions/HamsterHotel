@@ -13,15 +13,37 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <!-- start header navigation-->
+    <!-- start navbar-->
+    <nav class="navbar navbar-expand-lg header-bg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <!-- for toggler button to change color-->
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="7" width="30" height="2" fill="#ffffff"></rect>
+              <rect y="14" width="30" height="2" fill="#ffffff"></rect>
+              <rect y="21" width="30" height="2" fill="#ffffff"></rect>
+            </svg>
+            <!-- end toggler button color change-->
+          </span>
+        </button>
 
-    <div class="container-fluid">
-      <div class="row header-bg">
-        <!-- header-->
-        <div class="col">
-          <ul
-            class="nav align-items-end header-nav d-flex justify-content-center"
-          >
+        <div class="collapse navbar-collapse header-nav" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-end">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Overview</a>
             </li>
@@ -31,58 +53,61 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Packages</a>
             </li>
-            <img src="./hotelMarkupAssets/Logo.png" alt="Hamster Hotel Logo" />
+
+            <li>
+              <a class="navbar-brand" href="#"
+                ><img src="./hotelMarkupAssets/Logo.png" alt="Logo"
+              /></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Amenities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link">Contact</a>
             </li>
-            <li class="nav-item active-nav">
-              <a class="nav-link" href="#">Reserve</a>
+            <li class="nav-item">
+              <a class="nav-link active-nav" href="#">Reserve</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
+    <!-- navbar end-->
 
     <!-- start header image pool-->
-
-    <div class="row headerimg-crop">
-      <div class="col">
-        <img
-          src="./hotelMarkupAssets/header.jpg"
-          class="img-fluid"
-          alt="header image of pool"
-        />
-      </div>
-
-      <!-- end header image pool-->
-
-      <div
-        class="row d-flex align-content-center justify-content-center header-container"
-      >
-        <!--need to fix issue with column alignment-->
-        <div class="col">
-          <h1>Run on the wheel of luxury</h1>
-          <p>Exolore everting the beach has to offer in our relaxing resort</p>
+    <div
+      class="container-fluid pool-header p-0 d-flex justify-content-center align-items-center"
+    >
+      <div class="row header-container">
+        <!-- <div class="col"> -->
+        <div
+          class="container-fluid d-flex justify-content-center align-items-center"
+        >
+          <div class="row">
+            <div class="col" style="text-align: center">
+              <h1>Run on the wheel of luxury</h1>
+              <p>
+                Explore everting the beach has to offer in our relaxing resort
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- </div> -->
       </div>
     </div>
     <!-- end header navigation-->
-
     <!-- start welcome to hamsters paradise-->
     <div class="container" style="width: 70%">
       <div class="row mt-5 mb-5">
-        <div class="col-8 hamsterhome-crop">
+        <div class="col hamsterhome-crop">
           <img
             src="./hotelMarkupAssets/hamsterhomejpg.jpg"
             class="img-fluid"
             alt="hamster eating"
           />
         </div>
-        <div class="col">
-          <div class="card-body">
+        <div class="col-8">
+          <div class="row">
             <h5 class="card-title">Welcome to hamster's paradise</h5>
             <p class="card-text">
               Nestled in the heart of Cavia California, La Petite Maison is a
@@ -96,18 +121,23 @@
               Discover the satisfaction of indulging in our quality rooms, and
               thank you for choosing La Petite Maison.
             </p>
-
-            <div class="awards">
+          </div>
+          <div class="row awards d-flex align-items-end">
+            <div class="col-4">
               <img
                 class="img-fluid"
                 src="/hotelMarkupAssets/awardfinest.png"
                 alt="award finest"
               />
+            </div>
+            <div class="col-4">
               <img
                 class="img-fluid"
                 src="./hotelMarkupAssets/awardsatisfaction.png"
                 alt="award satistaction"
               />
+            </div>
+            <div class="col-4">
               <img
                 class="img-fluid"
                 src="./hotelMarkupAssets/awardgenuine.png"
@@ -119,103 +149,133 @@
       </div>
     </div>
     <!-- end hamsters paradise-->
+
     <!-- start Our Rooms-->
-    <div class="container-fluid blue-container d-flex justify-content-center">
-      <div class="row room-container">
+    <div class="container-fluid blue-container">
+      <div class="row">
         <div class="col">
           <h5 class="d-flex justify-content-center" style="color: white">
             Our Rooms
           </h5>
-          <div class="row row-cols-1 row-cols-md-3 g-5">
+          <div
+            class="row row-cols-1 row-cols-md-3 g-5 d-flex justify-content-center"
+          >
             <!-- start Queen Room-->
-            <div class="col">
+            <div class="col room-container">
               <div class="card border-0 rounded-0 h-100">
-                <img
-                  src="./hotelMarkupAssets/room1.jpg"
-                  class="card-img-top rounded-0"
-                  alt="Room1"
-                />
-                <div class="card-body">
-                  <h5 class="card-title room-header">Queen Room</h5>
-                  <h6>850 SQ FT room with city view</h6>
-                  <ul>
-                    <li>One queen size bed</li>
-                    <li>Seed Bar, fireplace and large balcony</li>
-                    <li>
-                      small kitchen with a refrigerator, stove, and island
-                    </li>
-                  </ul>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary reserve-button rounded-0"
-                  >
-                    Reserve
-                  </button>
+                <div class="container">
+                  <div class="row">
+                    <img
+                      src="./hotelMarkupAssets/room1.jpg"
+                      class="card-img-top p-0 rounded-0"
+                      alt="Room1"
+                    />
+                    <div class="col card-body  room-container">
+                      <h5 class="card-title room-header">Queen Room</h5>
+                      <h6>850 SQ FT room with city view</h6>
+                      <ul>
+                        <li>One queen size bed</li>
+                        <li>Seed Bar, fireplace and large balcony</li>
+                        <li>small kitchen with a refrigerator, and stove</li>
+                      </ul>
+                
+                    </div>
+                    <div class="row h-100">
+                      <div class="col">
+                        <button
+                          type="button"
+                          class="btn btn-primary reserve-button reserve-button-margin rounded-0"
+                        >
+                          Reserve
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <!--end Queen room-->
-            <div class="col">
+            <!-- start King Room-->
+            <div class="col  room-container">
               <div class="card border-0 rounded-0 h-100">
-                <img
-                  src="./hotelMarkupAssets/room2.jpg"
-                  class="card-img-top rounded-0"
-                  alt="Room2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title room-header">King Room</h5>
-                  <h6>950 SQ FT room with beach view</h6>
-                  <ul>
-                    <li>One king size bed</li>
-                    <li>Seed Bar, fireplace and large balcony</li>
-                    <li>
-                      small kitchen with a refrigerator, stove, and island
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn btn-primary reserve-button rounded-0"
-                  >
-                    Reserve
-                  </button>
+                <div class="container">
+                  <div class="row">
+                    <img
+                      src="./hotelMarkupAssets/room2.jpg"
+                      class="card-img-top p-0 rounded-0"
+                      alt="Room1"
+                    />
+                    <div class="col card-body">
+                      <h5 class="card-title room-header">King Room</h5>
+                      <h6>950 SQ FT room with city view</h6>
+                      <ul>
+                        <li>One king size bed</li>
+                        <li>Seed Bar, fireplace and large balcony</li>
+                        <li>Small kitchen with a refrigerator, and stove</li>
+                    
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <button
+                          type="button"
+                          class="btn btn-primary reserve-button reserve-button-margin rounded-0"
+                        >
+                          Reserve
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <!--end King room-->
+
+            <!-- start Beach Side Suite Room-->
+            <div class="col  room-container">
               <div class="card border-0 rounded-0 h-100">
-                <img
-                  src="./hotelMarkupAssets/room3.jpg"
-                  class="card-img-top rounded-0"
-                  alt="Room3"
-                />
-                <div class="card-body">
-                  <h5 class="card-title room-header">Beach Side Suite</h5>
-
-                  <h6>1500 SQ FT Suite with beach view</h6>
-                  <ul>
-                    <li>One California king size bed</li>
-                    <li>Second room with fireplace, hot tub, and balcony</li>
-                    <li>Seed Bar and coffee station</li>
-                    <li>Full kitchen with a refrigerator, stove, and island</li>
-                  </ul>
-
-                  <button
-                    type="button"
-                    class="btn btn-primary reserve-button rounded-0"
-                  >
-                    Reserve
-                  </button>
+                <div class="container">
+                  <div class="row">
+                    <img
+                      src="./hotelMarkupAssets/room2.jpg"
+                      class="card-img-top p-0 rounded-0"
+                      alt="Room3"
+                    />
+                    <div class="col card-body">
+                      <h5 class="card-title room-header">Beach Side SUite</h5>
+                      <h6>1500 SQ FT room with city view</h6>
+                      <ul>
+                        <li>One California king size bed</li>
+                        <li>Second room with fireplace,hot tub and balcony</li>
+                        <li>Seed Bar, and coffee station</li>
+                        <li>
+                          Full kitchen with a refrigerator, stove, and island
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row ">
+                      <div class="col ">
+                        <button
+                          type="button"
+                          class="btn btn-primary reserve-button reserve-button-margin rounded-0"
+                        >
+                          Reserve
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!--end Beach Side Suite room-->
           </div>
         </div>
       </div>
     </div>
     <!-- end our rooms-->
-    <!-- start welcome to hamsters paradise-->
-    <div class="container mt-5 mb-5 packages" style="width: 70% ">
+
+    <!-- start of packages-->
+    <div class="container mt-5 mb-5 packages" style="width: 70%">
       <h5 class="d-flex justify-content-center">Packages</h5>
       <div class="row d-flex justify-content-center">
         <!--start of cards with photos and text-->
@@ -247,10 +307,9 @@
           </div>
         </div>
         <!-- end Package 1-->
-         <!-- PACKAGE 2-->
-         <div class="card mb-3 border-0 rounded-0">
+        <!-- PACKAGE 2-->
+        <div class="card mb-3 border-0 rounded-0">
           <div class="row g-0">
-          
             <div class="col-6">
               <div class="card-body">
                 <h5 class="card-title">Beach Wedding package</h5>
@@ -276,8 +335,8 @@
         </div>
         <!-- end Package 2-->
 
-         <!-- PACKAGE 3-->
-         <div class="card border-0 rounded-0">
+        <!-- PACKAGE 3-->
+        <div class="card border-0 rounded-0">
           <div class="row g-0">
             <div class="col-6">
               <img
@@ -306,6 +365,106 @@
       </div>
     </div>
     <!-- end hamsters paradise-->
+
+    <!--start amenities-->
+    <div
+      class="container-fluid amenities-blue-container d-flex justify-content-center"
+    >
+      <div class="row">
+        <div class="col">
+          <h5 class="d-flex justify-content-center">Amenities</h5>
+
+          <p>
+            Here at La Petite Maison, we invite you to enjoy our services in
+            hopes that you have the most relaxing stay we can provide.
+          </p>
+          <div class="row d-flex align-items-end justify-content-center">
+            <div class="col">
+              <img
+                class="img-fluid"
+                src="./hotelMarkupAssets/24hour.png"
+                alt=" 24 hour room service"
+              />
+              <p>24 Hour Room Service</p>
+            </div>
+            <div class="col">
+              <img
+                src="./hotelMarkupAssets/breakfast.png"
+                alt="Breakfast Icon"
+              />
+              <p>Complimentary Breakfast</p>
+            </div>
+            <div class="col">
+              <img
+                src="./hotelMarkupAssets/valet.png"
+                alt="Valet parking Icon"
+              />
+              <p>Valet Parking</p>
+            </div>
+            <div class="col">
+              <img
+                src="./hotelMarkupAssets/pool.png"
+                alt="Beachside pool Icon"
+              />
+              <p>Beachside Pool</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end amenities-->
+
+    <!-- start reserve-->
+    <div class="container mt-5 mb-5 reserve header-bg">
+      <div class="col d-flex justify-content-center">
+        <h5>Reserve a Room</h5>
+      </div>
+
+      <div class="row p-5 d-flex align-items-end">
+        <div class="col mb-3">
+          <p class="">Check-in</p>
+          <input type="text" />
+        </div>
+        <div class="col mb-3">
+          <p class="">Check-out</p>
+          <input type="text" />
+        </div>
+        <div class="col mb-3">
+          <p class="">Number of Guests</p>
+          <input type="text" />
+        </div>
+        <div class="col mb-3">
+          <p class="">Room Type</p>
+          <input type="text" />
+        </div>
+        <div class="col mb-3 d-flex justify-content-center">
+          <button class="btn btn-primary rounded-0">Check Availability</button>
+        </div>
+      </div>
+      <div class="row">
+        <img
+          class="img-fluid"
+          src="./hotelMarkupAssets/hamsterreserve.jpg"
+          alt="Hamster in Reserve Section"
+        />
+      </div>
+    </div>
+    <!-- end reserve -->
+
+    <!-- start footer-->
+    <div class="container-fluid header-bg footer d-flex justify-content-center">
+      <div class="row">
+        <div class="col" style="text-align: center">
+          <img src="./hotelMarkupAssets/Logo.png" alt="Logo" />
+
+          <p>123 Sunflower Seed Rd., Cavia, California 95205</p>
+          <p>
+            ©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -19,19 +19,16 @@
 p{
     font-size: 15px;
     font-weight:lighter;
-    text-align: left;
+    /* text-align: left; */
     font: Source Sans Pro;
 letter-spacing: 0px;
 color: #1A1B26;
 }
 
 .header-bg{
-    
-    /* background: #000324 0% 0% no-repeat padding-box; */
 
     background: var(--blue1);
-    opacity: 1;
-  
+
 
 }
 .header-nav{
@@ -40,27 +37,42 @@ color: #1A1B26;
     font-weight: 26px;
     color: #FFFFFF;
     opacity: 1;
+    display: flex;
+    justify-content: center;
+
 
 }
 .header-nav a{
     color: white;
     font: Dosis;
+    
    
+}
+.header-nav img{
+  width:100px;
 }
 .active-nav{
     border: 2px solid var(--blue2);
 opacity: 1;
 }
-.header-img{
+.pool-header{
+  background-image: url('../hotelMarkupAssets/header.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 20% 50%; */
+
+}
+/* .header-img{
 position: absolute;
-/*need to position the starting point under the header nav*/
 top:-182px; 
     left: 0px;
     width: 100%;
 opacity: 1;
 height: auto;
   clip-path: outset(1000px);
-}
+  
+} */
 
 
 
@@ -85,15 +97,14 @@ height: auto;
   /*blue run on the wheel header*/
 
   .header-container{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-width: 50%;
-height: 40%;
+
+width: 60%;
+height: auto;
     background-color: var(--blue1);
     opacity: 0.8;
-  
-  }
+    padding-top:20px;
+    padding-bottom:20px;
+    }
   
 
   .header-container h1{
@@ -104,13 +115,13 @@ height: 40%;
   }
 
   .header-container p{
-    font-size: 11px;
+ 
     color: var(--blue2);
   }
 
   /* end blue run on the wheel header*/
 
-
+ 
   /*hamsters paradise section*/
   .hamsterhome-crop {
     width: 369px;
@@ -121,8 +132,8 @@ height: 40%;
   
   .hamsterhome-crop img {
     position: absolute;
-    top: -70px;    /* Adjust to bring desired part of the image into view */
-    left: -20px;  /* Adjust to bring desired part of the image into view*/
+    top: -70px;   
+    left: -20px;  
     width: 369px; 
     height: auto;
   }
@@ -163,8 +174,7 @@ font-weight:lighter;
   }
 
   .room-container{
-    width: 70%;
-
+    /* width: 70%; */
 
 
   }
@@ -177,11 +187,15 @@ font-weight:lighter;
   .reserve-button{
 
       padding-top: 0.5rem;
-      padding-left: 0.55rem;
+      padding-left: .5rem;
       font-size: 15px;
-       width: 40%;
+       width: 100px; 
+       
                       
                     
+  }
+  .reserve-button-margin{
+    margin:16px;
   }
 
   .room-header
@@ -198,13 +212,16 @@ font-weight:lighter;
 
   /* Start Packages*/
 
+  .card-body{
+    display:flex;
+    flex-direction: column;
+  }
+
   .packages img{
     width: 100%;
     height: 234px;
   }
 
-  .packages p{
-  }
 
   .packages-bluetxt{
     color: var(--blue5);
@@ -214,5 +231,52 @@ font-weight:lighter;
 
   /*Amenities*/
 
-  /*end of amenities*/
+  .amenities-blue-container{
+
+    background:  url('../hotelMarkupAssets/bg.jpg') ;
+    padding:5%;
+    width: 100%;
   
+    
+  
+  }
+  .amenities-blue-container  h5{
+    color: white;
+  }
+  .amenities-blue-container  p{
+  color: white;
+  /* display: flex; */
+  }
+  
+  /*end of amenities*/
+
+  /*start reserve*/
+.reserve{
+  width: 70%;
+  padding:0%;
+}
+.reserve h5{
+  color: white;
+}
+
+
+.reserve p{
+  color: white;
+  display:flex;
+}
+
+.reserve img{
+ height:400px;
+ object-fit: cover;
+ object-position: 50% 55%;
+ 
+}
+  /* end reserve*/
+  /*footer*/
+  .footer img{
+    width: 200px;;
+  }
+  .footer p{
+    color: white;
+  }
+  /*end of footer*/
