@@ -25,6 +25,8 @@ letter-spacing: 0px;
 color: #1A1B26;
 }
 
+
+
 .header-bg{
 
     background: var(--blue1);
@@ -47,6 +49,9 @@ color: #1A1B26;
     font: Dosis;
     
    
+}
+.header-nav a:hover{
+  color: white;
 }
 .header-nav img{
   width:100px;
@@ -237,7 +242,10 @@ font-weight:lighter;
   color: white;
   /* display: flex; */
   }
-  
+  .amenities-icon{
+
+    width: auto;
+  }
   /*end of amenities*/
 
   /*start reserve*/
@@ -270,3 +278,18 @@ font-weight:lighter;
     color: white;
   }
   /*end of footer*/
+  @media (max-width: 576px) {
+    .hide-img {
+      display: none;
+    }
+  
+  }
+
+  @media(max-width:820px){
+    .hide-logo {
+      display: none
+      
+    }
+
+
+  }
